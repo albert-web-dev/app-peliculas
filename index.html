@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Películas</title>
+    <!--colores
+        #162431  bg rgba(22, 5, 23, 1)
+        #3defaf  bg rgba(103, 26, 113, 1)
+    -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/scripts.js"></script>
+
+    <script src="https://kit.fontawesome.com/8b5cb0bc70.js" crossorigin="anonymous"></script>
+    <!--
+        nuevo <i class="far fa-star"></i>
+        popular <i class="fab fa-free-code-camp"></i>
+        categorías <i class="fas fa-ellipsis-h"></i>
+        favoritas <i class="far fa-heart"></i>
+        lista <i class="far fa-list-alt"></i>
+        similares <i class="fas fa-layer-group"></i>
+        cuenta <i class="far fa-user"></i>
+        play <i class="fas fa-play"></i>
+        buscar <i class="fas fa-search-plus"></i>
+        izquerda <i class="fas fa-arrow-circle-left"></i>
+        derecha <i class="fas fa-arrow-circle-right"></i>
+    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="perfil">
+        
+        <!--menu del perfil-->
+        <aside class="perfil__Cpanel">
+            <figure class="pefil__containerImg">
+                <img src="images/perfil.jpeg" alt="" class="perfil__imgPerfil">
+            </figure>
+
+            <div class="perfil__containerOptions">
+                <div class="perfil__stuff">
+                    <h2 class="perfil__myStuff">Perfíl</h2>
+                </div>
+                <div class="perfil__settings">
+                    <i class="far fa-heart cpanel__icono"></i> <span class="perfil__span">Favorits</span>
+                </div>
+                <div class="perfil__settings">
+                    <i class="far fa-list-alt cpanel__icono"></i> <span class="perfil__span">Mí Lista</span>
+                </div>
+                <div class="perfil__settings">
+                    <i class="fas fa-layer-group cpanel__icono"></i> <span class="perfil__span">Relacionadas</span>
+                </div>
+                <div class="perfil__settings">
+                    <i class="far fa-user cpanel__icono"></i> <span class="perfil__span">Cuenta</span>
+                </div>
+            </div>
+
+            <div class="perfil__relleno"></div>
+        </aside>
+
+        <!--menu superior-->
+        <nav class="perfil__menu">
+            <ul class="perfil__menuUl">
+                <li class="perfil__menuLi">
+                    <div class="menuLi__link calificacion" href="#">
+                        <i class="far fa-star menuLi__icono"></i>
+                        <span class="menuLi__span">Mejor Calificadas</span>
+                    </div>
+                </li>
+                <li class="perfil__menuLi">
+                    <div class="menuLi__link popular" href="#">
+                        <i class="fab fa-free-code-camp menuLi__icono"></i>
+                        <span class="menuLi__span">Populares</span>
+                    </div>
+                </li>
+                <li class="perfil__menuLi">
+                    <div class="menuLi__link" href="#">
+                        <i class="fas fa-ellipsis-h menuLi__icono"></i>
+                        <span class="menuLi__span">Categorías</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu__buscador">
+                <input class="buscador__input" type="text" placeholder="Buscar""> <i class="fas fa-search-plus buscador__icono"></i>
+            </div>
+        </nav>
+
+        <div class="perfil__opaciti"></div>
+
+        <!--Peliculas carroucel, solicitadas por petición ajax-->
+        <section class="perfil__peliculas">
+            
+            <div class="peliculas__izquierda">
+                <i class="fas fa-arrow-circle-left mover__icono"></i>
+            </div>
+            
+            <article class="perfil__pelicula">
+                
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                <div class="perfil__peliContainer">
+                    <img src="" alt="" class="perfil__peliculaArticle">
+                </div>
+                
+            </article>
+
+            <div class="peliculas__derecha">
+                <i class="fas fa-arrow-circle-right mover__icono"></i>
+            </div>
+
+        </section>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+</body>
+</html>

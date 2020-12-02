@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;;
+} 
+/*..........................grid css para el perfil completo..........................*/
+.perfil{
+    background-image: url('../images/Kaisa_0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 12% 44% 44%;
+    grid-template-areas: "perfil__Cpanel    perfil__menu"
+                         "perfil__Cpanel    perfil__opaciti"
+                         "perfil__Cpanel    perfil__peliculas";
+}
+
+.perfil__Cpanel{
+    grid-area: perfil__Cpanel;
+}
+.perfil__menu{
+    grid-area: perfil__menu;
+}
+.perfil__opaciti{
+    grid-area: perfil__opaciti;
+}
+.perfil__peliculas{
+    grid-area: perfil__peliculas;
+}
+
+/*---------panel de perfil (aside)--------*/
+.perfil__Cpanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #162431;
+}
+.pefil__containerImg{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil__imgPerfil{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+.perfil__containerOptions{
+    width: 100%;
+    height: 66.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil__stuff{
+    width: 60%;
+    height: 12%;
+    margin-bottom: 2%;
+}
+.perfil__myStuff{
+    color: #3defaf;
+    font-size: 2em;
+}
+.perfil__settings{
+    width: 75%;
+    height: 10%;
+}
+.cpanel__icono{
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.perfil__span{
+    margin-left: 1em;
+    color: #3defaf;
+}
+
+
+/*.....................menu superior-----------------------*/
+.perfil__menu{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfil__menuUl{
+    width: 66.6%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.perfil__menuLi:nth-child(2){
+    margin-right: 6%;
+}
+.perfil__menuLi:nth-child(1){
+    margin-right: 6%;
+}
+.menuLi__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.menuLi__icono{
+    font-size: 1.6em;
+    color: #3defaf;
+    
+}
+.menuLi__span{
+    font-size: 1.1em;
+    color: #3defaf;
+    
+}
+.menuLi__link,
+.menuLi__icono{
+    cursor: pointer;
+}
+
+.menu__buscador{
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buscador__input{
+    width: 84%;
+    height: 100%;
+    margin-right: 3%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .8s;
+    background-color: rgba(255, 255, 255, 0.247);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.buscador__icono{
+    width: 7%;
+    font-size: 1.6em;
+    color: white;
+    margin-right: 3%;
+}
+.buscador__icono:hover{
+    cursor: pointer;
+}
+
+
+/*-----------------------peliculas--------------*/
+.perfil__peliculas{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(127, 30, 130, .5) 0%, rgba(28, 8, 27, .9)100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil__pelicula{
+    width: 92%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfil__peliContainer{
+    width: 12.8%;
+    height: 80%;
+    border-radius: 10px;
+    margin-left: .5%;
+}
+.perfil__peliculaArticle{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.peliculas__izquierda,
+.peliculas__derecha{
+    width: 4%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mover__icono{
+    font-size: 2em;
+    color: #3defaf;
+}
